@@ -1,3 +1,6 @@
+// Math, Sorting
+// https://www.acmicpc.net/problem/1183
+
 package main
 
 import (
