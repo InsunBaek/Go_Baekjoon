@@ -15,7 +15,6 @@ var br *bufio.Scanner = bufio.NewScanner(os.Stdin)
 var bw *bufio.Writer = bufio.NewWriter(os.Stdout)
 
 func main() {
-
 	var DP [1001]int
 
 	br.Scan()
@@ -34,5 +33,4 @@ func main() {
 	} else {
 		fmt.Println("CY")
 	}
-
 }
