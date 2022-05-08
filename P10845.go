@@ -59,7 +59,6 @@ func (q Queue) back() int {
 }
 
 func main() {
-
 	q := Queue{}
 
 	br.Scan()
