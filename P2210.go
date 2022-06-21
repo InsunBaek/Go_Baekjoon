@@ -1,4 +1,4 @@
-// Graph, BFS, DFS
+// Graph, DFS
 // https://www.acmicpc.net/problem/2210
 
 package main
@@ -19,7 +19,7 @@ var graph = make([][]string, 5)
 var m map[string]int
 var CNT int = 0
 
-func BFS(y int, x int, cnt int, str string) {
+func DFS(y int, x int, cnt int, str string) {
 	if cnt == 6 {
 		if m[str] == 0 {
 			CNT++
@@ -37,7 +37,7 @@ func BFS(y int, x int, cnt int, str string) {
 		if ny < 0 || nx < 0 || ny >= 5 || nx >= 5 {
 			continue
 		}
-		BFS(ny, nx, cnt+1, str+graph[y][x])
+		DFS(ny, nx, cnt+1, str+graph[y][x])
 	}
 }
 
@@ -60,7 +60,7 @@ func main() {
 
 	for i := 0; i < 5; i++ {
 		for j := 0; j < 5; j++ {
-			BFS(i, j, 0, "")
+			DFS(i, j, 0, "")
 		}
 	}
 
