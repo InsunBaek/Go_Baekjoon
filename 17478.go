@@ -1,4 +1,4 @@
-// Recursive
+// Recursion
 // https://www.acmicpc.net/problem/17478
 
 package main
