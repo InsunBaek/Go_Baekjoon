@@ -13,7 +13,7 @@ import (
 var br *bufio.Scanner = bufio.NewScanner(os.Stdin)
 var bw *bufio.Writer = bufio.NewWriter(os.Stdout)
 
-func isItRight(prev int, next int) bool {
+func isItLeft(prev int, next int) bool {
 	if prev == 0 {
 		return true
 	}
@@ -68,7 +68,7 @@ func main() {
 		if i == 0 {
 			firstValue = length
 		}
-		if isItRight(prev, direction) {
+		if isItLeft(prev, direction) {
 			if direction == 1 || direction == 2 {
 				if length > maxWidth {
 					maxWidth = length
