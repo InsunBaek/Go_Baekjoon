@@ -13,6 +13,15 @@ import (
 
 var sc = bufio.NewScanner(os.Stdin)
 var bw = bufio.NewWriter(os.Stdout)
+var dy = [...]int{1, 0, -1, 1, -1, 1, 0, -1}
+var dx = [...]int{1, 1, 1, 0, 0, -1, -1, -1}
+
+func canVisit(N int, row int, col int) bool {
+	if row < 0 || col < 0 || row >= N || col >= N {
+		return false
+	}
+	return true
+}
 
 func Fn() {
 	N := scanInt()
