@@ -1,5 +1,5 @@
 // Regular Expression
-//https://www.acmicpc.net/problem/9996
+// https://www.acmicpc.net/problem/9996
 package main
 
 import (
